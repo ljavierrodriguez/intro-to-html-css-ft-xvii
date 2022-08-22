@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('./home.css');
+/* 
+
+Sintaxis:
+
+selector {
+    propiedad: valor;
+}
+
+*/
+
+body {
+    font-size: 10px;
+    font-family: "Roboto";
+}
+
+/* Selector Universal */
+/* * {
+    border: 1px solid black;
+} */
+
+/* Selector ID */
+#titulo {
+    font-size: 12px;
+}
+
+/* Selector Clase */
+.menu {
+    font-size: 20px;
+}
+
+.menu-rojo {
+    color: red;
+}
+
+.menu-azul {
+    color: blue;
+}
+
+/* Selector Tag */
+h1 {
+    color: red;
+}
+
+p {
+    font-size: 10px;
+}
+
+section {
+    justify-content: center;
+}
+
+/* Selector Descendiente */
+section h1 {
+    color: violet;
+    text-transform: uppercase;
+}
+
+section p {
+    text-align: justify;
+}
+
+/* Selector Hijo */
+
+ul > li > span {
+    color: blue;
+}
+
+div > span {
+    color: blueviolet;
+}
+
+/* Selector Adyacente */
+
+h3 + p {
+    text-align: justify;
+    color: brown;
+}
+
+/* Selector Hermano */
+h2 ~ p {
+    text-align: justify;
+    color: royalblue !important;
+
+}
+
+/* Selector Atributo */
+
+a[class]{
+    color: red;
+}
+
+a[class="link"]{
+    color: blueviolet;
+}
+
+a[class*="link"]{
+    color: brown;
+}
+
+a[class$="link"]{
+    color: brown;
+}
+
+a[class^="link"]{
+    color: rgb(24, 163, 119);
+}
+
+a[class~="link"]{
+    color: rgb(58, 16, 195);
+}
+
+a[class~="link"]:hover{
+    color: rgb(16, 162, 195);
+}
+
+/* 
+t = top
+b = bottom
+r = right
+l = left
+
+margin: 10px; trbl
+margin: 10px 20px; tb rl
+margin: 10px 10px 10px; t rl b
+margin: 10px 10px 10px 10px; t r b l
+
+padding: 10px; trbl
+padding: 10px 20px; tb rl
+padding: 10px 10px 10px; t rl b
+padding: 10px 10px 10px 10px; t r b l
+
+border: 1px solid blue;
+
+*/
+.boxmodel {
+    margin: 10px 20px 10px 50px;
+    border: 2px solid blue;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 1rem; /* 10px */ /* 16px */
+}
