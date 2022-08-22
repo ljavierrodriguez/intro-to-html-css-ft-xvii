@@ -1,0 +1,39 @@
+/* 
+
+Sintaxis:
+
+At-rule + media type + (media feature) + operador + (media feature) 
+
+@media screen and (min-width: 340px) and (max-width: 540px){
+
+}
+
+*/
+
+@media screen and (max-width: 540px) {
+    .box {
+        width: 100%;
+        height: 100vh;
+        background-color: aquamarine;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 720px) {
+    .box {
+        width: 100%;
+        height: 50vh;
+        background-color: cadetblue;
+        font-size: 1em;
+    }
+}
+
+.box {
+    width: 100vw;
+    /* height: 100vh; */
+    height: 540px;
+    background-color: blueviolet;
+}
+
+body {
+    margin: 0;
+}
